@@ -1,19 +1,17 @@
-# kotoba-web
+# kami-web
 
-[![CI](https://github.com/kotoba-lang/kami-web/actions/workflows/ci.yml/badge.svg)](https://github.com/kotoba-lang/kami-web/actions/workflows/ci.yml)
+> **Authority (ADR-2607102200 addendum 12)**
+>
+> | layer | location | role |
+> |---|---|---|
+> | **CLJC SSoT** | this repo `src/kotoba/web/*` | portable math / render-IR shape / document layout |
+> | **Static demos** | this repo `demos/` | graph.html, play.html, vendor UI JS |
+> | **WebGPU executor** | `kotoba-lang/webgpu` | `kami.webgpu` browser draw |
+> | **Game host surface** | `kotoba-lang/host` | `kami.host` / input / ui / audio |
+> | **Engine SDK** | `kotoba-lang/kami-engine-sdk` | ECS / scene / render-IR authoring |
+>
+> Nested `kami-engine/kami-web` is a **shim** pointing here. Do not add new demos under the monorepo path.
 
-Pure-Clojure (`.cljc`) port of the portable parts of
-[kotoba-lang/kami-engine](https://github.com/kotoba-lang/kami-engine)'s
-`kami-web` Rust crate — part of ADR-2607010930 (clj-wgsl migration Phase 4),
-which retires the Rust `kami-engine` workspace in favor of pure Clojure
-"kotoba" authority repos.
-
-`kami-web` is documented in kami-engine's `CLAUDE.md` as: *"Legacy
-monolithic WASM entry (6567 LoC, 11 `run_with_*`). Frozen — new games use
-`kami-app-{game}`"*. It is mostly `wgpu`/`wasm-bindgen` host-adapter glue
-(GPU device/surface/pipeline setup, DOM/canvas/event binding, WebRTC
-signaling, VRM skeleton/morph binding) — none of that is portable to (or
-meaningful in) plain Clojure, and stays in Rust.
 
 ## What's ported
 
