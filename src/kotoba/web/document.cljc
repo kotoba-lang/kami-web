@@ -14,7 +14,7 @@
   `check_document_gpu` / `document_gpu_info` (adapter capability probes),
   and `render_document_frame` itself (canvas lookup, surface setup,
   instance buffer upload, submit/present)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ---------------------------------------------------------------------
 ;; EMU <-> px (OOXML native unit is EMU: 914400 per inch)
