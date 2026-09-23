@@ -1,5 +1,5 @@
 (ns kotoba.web.render-ir-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.web.render-ir :as rir]))
 
 (def sample-ir

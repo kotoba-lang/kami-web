@@ -1,5 +1,5 @@
 (ns kotoba.web.entries-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.web.entries :as entries]))
 
 (deftest legacy-entries-catalog-test
