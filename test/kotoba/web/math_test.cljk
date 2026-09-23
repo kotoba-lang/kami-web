@@ -1,5 +1,5 @@
 (ns kotoba.web.math-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.web.math :as math]))
 
 (defn- close? [a b] (< (Math/abs (- a b)) 1.0e-5))

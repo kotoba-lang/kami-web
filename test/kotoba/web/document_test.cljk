@@ -1,5 +1,5 @@
 (ns kotoba.web.document-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.web.document :as doc]))
 
 (deftest emu->px-test
