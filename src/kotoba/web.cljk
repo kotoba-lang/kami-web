@@ -2,7 +2,7 @@
   "Pure-Clojure port of the portable parts of `kotoba-lang/kami-engine`'s
   `kami-web` Rust crate (ADR-2607010930, clj-wgsl migration Phase 4).
 
-  `kami-web` is documented in kami-engine's CLAUDE.md as: \"Legacy
+  `kami-web` is documented in kami-engine's AGENTS.md as: \"Legacy
   monolithic WASM entry (6567 LoC, 11 `run_with_*`). Frozen — new games use
   `kami-app-{game}`\". It is almost entirely `wgpu`/`wasm-bindgen`
   host-adapter glue (GPU device/surface/pipeline setup, DOM/canvas/event
