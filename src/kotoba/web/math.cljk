@@ -9,7 +9,7 @@
   `to_cols_array` / `from_cols_array` layout, so values round-trip byte
   for byte with the Rust side if ever cross-checked.
 
-  Left unported (adapter-only, stays in Rust — see kami-web CLAUDE.md /
+  Left unported (adapter-only, stays in Rust — see kami-web AGENTS.md /
   ARCHITECTURE.md): the `wasm_bindgen` boundary itself, the thread-local
   `HeightmapCache` (WASM-memory caching of `cache_heightmap`/
   `sample_terrain_height` state — pure session-cache plumbing, no math),

@@ -3,7 +3,7 @@
   `kami-web/src/entries/{mod,quarry_walk}.rs` and the `run_with_*` grab-bag
   documented in `kami-web/src/lib.rs`.
 
-  `kami-web` itself is documented (kami-engine CLAUDE.md) as: \"Legacy
+  `kami-web` itself is documented (kami-engine AGENTS.md) as: \"Legacy
   monolithic WASM entry (6567 LoC, 11 `run_with_*`). Frozen — new games use
   `kami-app-{game}`\". This namespace does two things:
 
